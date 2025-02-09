@@ -139,7 +139,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./login.php" role="button">
+        <a class="nav-link" href="Views/login.php" role="button">
           <i class="far fa-user"></i> Iniciar sesión
         </a>
       </li>
