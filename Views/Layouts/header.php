@@ -56,7 +56,7 @@
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
+          <i class="fas fa-shopping-cart"></i>
           <span class="badge badge-danger navbar-badge">3</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -114,7 +114,7 @@
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
+          <i class="fas fa-heart"></i>
           <span class="badge badge-warning navbar-badge">15</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -139,15 +139,20 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
+        <a class="nav-link" href="./login.php" role="button">
+          <i class="far fa-user"></i> Iniciar sesión
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
+       <li class="nav-item dropdown">
+          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class = "img-fluid img-circle" src="Util\imgs\avatar5.png" width = "30" height = "30" alt=""> <span>Usuario Logeado</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#"> <i class="fas fa-user-cog"></i> Mi perfil</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="fas fa-shopping-basket"></i> Mis pedidos</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="fas fa-user-times"></i> Cerrar sesion</a></li>
+          </ul>
+        </li>
     </ul>
   </nav>
   <!-- /.navbar -->
