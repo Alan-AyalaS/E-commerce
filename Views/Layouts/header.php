@@ -112,7 +112,7 @@
         </div>
       </li>
       <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown mr-1">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="fas fa-heart"></i>
           <span class="badge badge-warning navbar-badge">15</span>
@@ -138,19 +138,24 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" id="nav_register">
+        <a class="nav-link" href="Views/register.php" role="button">
+          <i class="fas fa-user-plus"></i> Registrarse
+        </a>
+      </li>
+      <li class="nav-item" id="nav_login">
         <a class="nav-link" href="Views/login.php" role="button">
           <i class="far fa-user"></i> Iniciar sesión
         </a>
       </li>
-       <li class="nav-item dropdown">
+       <li class="nav-item dropdown mr-5" id="nav_usuario">
           <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img class = "img-fluid img-circle" src="Util\imgs\avatar5.png" width = "30" height = "30" alt=""> <span>Usuario Logeado</span>
+            <img id="avatar_nav" class = "img-fluid img-circle" src="Util\imgs\avatar5.png" width = "30" height = "30" alt=""> <span id = "usuario_nav">Usuario Logeado</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="#"> <i class="fas fa-user-cog"></i> Mi perfil</a></li>
             <li><a class="dropdown-item" href="#"> <i class="fas fa-shopping-basket"></i> Mis pedidos</a></li>
-            <li><a class="dropdown-item" href="#"> <i class="fas fa-user-times"></i> Cerrar sesion</a></li>
+            <li><a class="dropdown-item" href="Controllers/logout.php"> <i class="fas fa-user-times"></i> Cerrar sesion</a></li>
           </ul>
         </li>
     </ul>
@@ -160,7 +165,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link">
+    <a href="index.php" class="brand-link">
       <img src="Util\imgs\Logo5sFOAM.png" alt="Logo" width="100px" class="brand-image" style="opacity: .8">
       <span class="brand-text font-weight-light">-</span>
     </a>
@@ -170,10 +175,10 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="Util\imgs\avatar5.png" class="img-circle elevation-2" alt="User Image">
+          <img id="avatar_menu" src="Util/imgs/default-avatar.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Usuario</a>
+          <a id="usuario_menu" href="#" class="d-block"></a>
         </div>
       </div>
 
